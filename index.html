@@ -1013,6 +1013,82 @@
             .footer-copy { text-align: left; }
         }
 
+        /* ── 고객지원 ── */
+        .support-section {
+            background: var(--white);
+            padding: 100px 24px;
+        }
+        .support-inner {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .support-card {
+            background: var(--orange-pale);
+            border: 1.5px solid rgba(249, 115, 22, 0.15);
+            border-radius: var(--radius);
+            padding: 48px 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        .support-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--orange), var(--yellow));
+        }
+        .support-icon {
+            font-size: 40px;
+            margin-bottom: 16px;
+            display: block;
+        }
+        .support-card h2 {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--text);
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
+        }
+        .support-card p {
+            font-size: 0.95rem;
+            color: var(--text-sub);
+            line-height: 1.9;
+            margin-bottom: 0;
+        }
+        .support-email-box {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: white;
+            border: 1.5px solid rgba(249, 115, 22, 0.25);
+            border-radius: 12px;
+            padding: 12px 24px;
+            margin: 20px 0;
+            text-decoration: none;
+            transition: all 0.25s;
+        }
+        .support-email-box:hover {
+            border-color: var(--orange);
+            box-shadow: 0 8px 24px rgba(249, 115, 22, 0.12);
+            transform: translateY(-2px);
+        }
+        .support-email-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+        .support-email-addr {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--orange);
+        }
+        .support-note {
+            font-size: 13px;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
         /* ── 반응형 ── */
         @media (max-width: 480px) {
             .features-grid { grid-template-columns: 1fr; }
@@ -1475,6 +1551,26 @@
                     <svg viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.4l2.754 1.596a1 1 0 010 1.731l-2.754 1.595L15.1 12l2.598-2.693zM5.864 3.458L16.8 9.791l-2.302 2.302-8.634-8.635z"/></svg>
                     Google Play
                 </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 고객지원 -->
+    <div class="support-section" id="support">
+        <div class="support-inner">
+            <div class="support-card reveal">
+                <span class="support-icon">💌</span>
+                <h2>얌플래너 고객지원</h2>
+                <p>얌플래너 이용 중 문의사항이 있으시면<br>아래 이메일로 연락해 주세요.</p>
+                <a class="support-email-box" href="mailto:yumplannerapp@gmail.com">
+                    <span class="support-email-label">이메일</span>
+                    <span class="support-email-addr">yumplannerapp@gmail.com</span>
+                </a>
+                <p class="support-note">
+                    영업일 기준 1~2일 내 답변드립니다.<br>
+                    개인정보 관련 문의 또한 위 이메일로 접수해 주세요.<br><br>
+                    감사합니다.
+                </p>
             </div>
         </div>
     </div>
